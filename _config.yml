@@ -9,6 +9,7 @@ url: "" # the base hostname & protocol for your site
 instagram_username: packetstudio
 twitter_username: mehravaaar
 github_username: mehravaaar
+linkedin_username: mehravar-kashiri
 
 # Build settings
 markdown: kramdown
