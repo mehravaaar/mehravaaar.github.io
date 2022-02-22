@@ -12,3 +12,19 @@ github_username: mehravaaar
 
 # Build settings
 markdown: kramdown
+
+#   Permalinks allow us to structure the directories of our source code different 
+#   from the directories in our output.
+#   permalink: /:categories/:year/:month/:day/:title/   # or use >> permalink: pretty
+permalink: /:categories/:title
+
+#   Collections are a great way to group related content like members of a team or 
+#   talks at a conference.
+collections:
+  motion_graphy:
+    output: true
+    permalink: /:collection/:name
+
+#You can access a snippet of a posts’s content by using excerpt variable on a post. By default this is the first paragraph of content in the post,
+#however it can be customized by setting a excerpt_separator variable in front matter or _config.yml.
+excerpt_separator: <!--more-->

@@ -46,3 +46,24 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+// Isotope Config
+$('.grid').isotope({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    // use element for option
+    columnWidth: '.grid-sizer'
+  }
+})
+
+// init Isotope for filtering
+var $grid = $('.grid').isotope({
+    // options
+  });
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });

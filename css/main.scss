@@ -42,3 +42,20 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
+
+// Isotope grid size
+@media only screen and (orientation: portrait) {
+        // Isotope grid size
+        .grid-sizer,
+        .grid-item,
+        .grid-item--width2 { width: 100% !important; }
+      }
+
+.grid-sizer,
+.grid-item { width: 25%; }
+/* 2 columns */
+.grid-item--width2 { width: 50%; }
+
+#portfoio-header {padding: 10rem 0 3rem 0;}
+#portfoio-header .btn {margin: .2rem 0 .5rem;}
+
