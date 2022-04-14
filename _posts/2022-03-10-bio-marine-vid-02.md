@@ -4,7 +4,7 @@ title: "Bio Marine Stop motion"
 date:   2022-03-10 15:35:00 +0400
 categories: ['Stop motion', ]
 tags: ['video', 'teaser', 'stop-motion', ]
-thumbnail: 'files/video/biomarinevid02.png'
+thumbnail: 
 video: 'files/video/biomarinevid02.mp4'
 published: true
 ---

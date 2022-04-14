@@ -22,7 +22,13 @@
             <div class="grid-sizer"></div>
             <div class="grid-item col-lg-4 col-sm-6 {% for tag in post.tags %}{{tag}} {% endfor %}" style="flex: 1">
                 <a class="portfolio-box" data-toggle="modal" data-target="#Modal{{ count }}">
+                    {% if post.video %}
+                    <video class="img-responsive" controls>
+                        <source src="{{ post.video }}" type="video/mp4" />
+                    </video>
+                    {% else %}
                     <img src="{{ post.thumbnail }}" class="img-responsive" alt="" />
+                    {% endif %}
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -46,7 +52,7 @@
                             </div>
                             <div class="modal-body">
                                 {% if post.video %}
-                                <video width="100%" height="100%" autoplay controls>
+                                <video width="100%" height="100%" controls>
                                     <source src="{{ post.video }}" type="video/mp4" />
                                 </video>
                                 {% else %}

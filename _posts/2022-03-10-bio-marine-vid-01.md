@@ -4,7 +4,7 @@ title: "Bio Marine Video Teaser"
 date:   2022-03-10 15:35:00 +0400
 categories: ['Video Teaser', ]
 tags: ['video', 'teaser', 'clip', 'video-teaser' ]
-thumbnail: 'files/video/biomarinevid01.png'
+thumbnail: 
 video: 'files/video/biomarinevid01.mp4'
 published: true
 ---
